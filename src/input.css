@@ -1,3 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-gradient-to-b from-softViolet to-softBlue;
+}
+main {
+  @apply w-full;
+}
+
+.body-base {
+  @apply flex flex-col justify-center items-center h-screen w-screen font-kumbhSans text-[14px];
+}
+
+.faq-container {
+  @apply w-[350px] h-[550px] flex flex-col bg-white rounded-3xl mx-auto px-6 pb-8 md:grid md:grid-cols-2 md:min-w-[750px] md:max-w-[1000px] md:w-[90%] md:h-auto md:p-0;
+}
+
+.faq-title {
+  @apply text-4xl text-center text-vddBlue font-bold mt-14 mb-4 md:text-left md:mt-0 md:mt-20;
+}
+
+.img-desktop-container {
+  @apply w-full relative hidden md:block;
+  background-image: url('images/bg-pattern-desktop.svg');
+  background-size: 1020px;
+  background-repeat: no-repeat;
+  background-position: -675px -340px;
+}
+.img-woman-d {
+  @apply absolute top-[90px] left-[-80px] w-[425px] h-auto;
+}
+.img-box {
+  @apply w-[160px] absolute z-40 top-[215px] left-[-78px];
+}
+.img-mobile-container {
+  @apply flex flex-col items-center relative mt-[-112px] md:hidden;
+}
+.img-shadow {
+  @apply w-[250px] h-auto absolute top-[110px];
+}
+.img-woman {
+  @apply w-[250px] h-auto;
+}
+
+.questions-container {
+  @apply flex flex-col justify-start md:w-[80%] md:h-full z-10;
+}
+.question-container {
+  @apply flex flex-col border-b-[1px] border-lgBlue;
+}
+.question {
+  @apply flex justify-between items-center text-vddBlue md:hover:text-softRed cursor-pointer relative;
+}
+.q-title {
+  @apply w-full py-4 z-10;
+}
+.answer {
+  @apply text-dgBlue pr-5 text-[12px] overflow-hidden ease-linear duration-200;
+}
+.arrow {
+  @apply ease-linear duration-200 absolute right-0;
+}
