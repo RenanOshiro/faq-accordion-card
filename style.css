@@ -523,14 +523,6 @@ video {
   margin-top: 2.5rem;
 }
 
-.mb-\[-20px\]{
-  margin-bottom: -20px;
-}
-
-.mb-\[20px\]{
-  margin-bottom: 20px;
-}
-
 .mb-5{
   margin-bottom: 1.25rem;
 }
@@ -539,12 +531,28 @@ video {
   height: 500px;
 }
 
-.h-auto{
-  height: auto;
+.max-h-0{
+  max-height: 0px;
 }
 
-.h-0{
-  height: 0px;
+.max-h-96{
+  max-height: 24rem;
+}
+
+.max-h-20{
+  max-height: 5rem;
+}
+
+.max-h-10{
+  max-height: 2.5rem;
+}
+
+.max-h-16{
+  max-height: 4rem;
+}
+
+.max-h-14{
+  max-height: 3.5rem;
 }
 
 .w-\[500px\]{
